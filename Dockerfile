@@ -9,7 +9,7 @@ RUN cd / && \
     addgroup www  && \
     adduser -G www -D -s /sbin/nologin www  && \
     apk add nginx && \
-    apk add php7 php7-fpm php7-opcache php7-curl php7-gd php7-mbstring php7-mysqli php7-json php7-mcrypt php7-redis php7-pdo  redis  && \
+    apk add php7 php7-fpm php7-opcache php7-curl php7-gd php7-mbstring php7-mysqli php7-json php7-mcrypt php7-redis php7-pdo redis php7-sqlite3 php7-pdo_sqlite php7-pdo_mysql php7-mongodb && \
     apk del build-base shadow binutils && \
     #rm -rf  /var/cache/apk/* && \
     chmod +x /run.sh
