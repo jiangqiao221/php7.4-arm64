@@ -9,7 +9,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
     apk add nginx && \
     apk add php7 php7-fpm php7-gd php7-mbstring php7-mcrypt php7-pdo php7-sqlite3 php7-pdo_sqlite && \
     apk del build-base shadow binutils && \
-    #rm -rf  /var/cache/apk/* && \
+    rm -rf  /var/cache/apk/* && \
     chmod +x /run.sh
 EXPOSE  80
 ENTRYPOINT ["/run.sh"]
