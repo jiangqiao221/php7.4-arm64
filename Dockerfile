@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 alpine:3.14.0
+FROM --platform=linux/arm64/v8 alpine:3.14.0
 COPY run.sh /
 
 WORKDIR /
